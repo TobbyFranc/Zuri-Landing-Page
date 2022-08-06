@@ -140,6 +140,7 @@ nav ul li .nava:hover{
     nav{
         justify-content: flex-start;
         padding: 0;
+    }
 
 
     
@@ -147,7 +148,6 @@ nav ul li .nava:hover{
         display: none;
     }
 
-    
     
     .enroll{
         cursor: pointer;
