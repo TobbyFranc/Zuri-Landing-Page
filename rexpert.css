@@ -1,0 +1,536 @@
+:root{
+    --navBgColor: hsla(0, 0%, 97%, 0.973);
+    --sectionHomeBgColor: hsla(0, 0%, 98%, 0.973);
+    --sectionImapactBgColor: hsl(300, 50%, 98%);
+    --enrollBtn: rgb(233, 24, 24);
+    --joinTalentBtn: hsl(0, 3%, 14%);
+    --textFont: 'Poppins', sans-serif;
+    --WhiteColor: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--textFont);
+    display: grid;
+    /* place-content: center; */
+    min-height: 100vh;
+}
+
+header{
+    background-color: var(--navBgColor);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 60px;
+}
+
+.navlogo{
+    margin-bottom: 20px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul .linebtn{
+    list-style: none;
+    margin: 0 20px 20px 20px;
+    padding: 12px 8px;
+    /* background-color: gold; */
+    /* border-bottom: 3px solid var(--enrollBtn); */
+}
+
+nav ul .linebtn:visited{
+    border-bottom: 3px solid var(--enrollBtn);
+}
+
+nav ul .linebtn:hover{
+    background-color: rgb(188, 200, 236);
+}
+
+nav ul .linebtn:active{
+    border-bottom: 3px solid var(--enrollBtn);
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+nav ul .talentbtn{
+    list-style: none;
+    margin: 20px 20px 20px 20px;
+    color: var(--WhiteColor);
+    padding-bottom: 2px; 
+}
+
+nav ul .talentbtn a{
+    background-color: var(--enrollBtn);
+    border-bottom-right-radius: 12px;
+    list-style: none;    
+    padding: 8px 22px ;
+    color: var(--WhiteColor);
+}
+
+/* fiiiiiiiiiiiiiiiiiiiiiiiiiiirs */
+
+
+section.home{
+    padding: 10px 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.introhome{
+    text-align: left;
+    /* border: 2px solid gold; */
+    padding-right: 200px;
+    position: relative;
+}
+
+.introhome h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.talentline{
+    position: absolute;
+    top: 23%;
+    left: 47%;
+}
+
+h1 span{
+    color: var(--enrollBtn);
+}
+
+.introhome .abtzuri{
+    margin: 30px 0;
+    padding-right: 180px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+
+button.hiretalentbtn{
+    background-color: var(--enrollBtn);
+    color: var(--WhiteColor);
+    padding: 6px 32px;
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 2px solid var(--enrollBtn);
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 1px 3px 2px rgb(188, 188, 189);
+    transition: all 0.3s ease-in;
+}
+
+button.hiretalentbtn:hover{
+    background-color: transparent;
+    color: var(--enrollBtn);
+    border: 2px solid var(--enrollBtn);
+    box-shadow: 0 2px 6px 4px rgb(188, 188, 189);
+    border-top-left-radius: 12px;
+}
+
+button.jointalentbtn{
+    background-color: var(--joinTalentBtn);
+    color: var(--WhiteColor);
+    padding: 6px 12px;
+    margin-bottom: 24px;
+    margin-left: 12px;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 3px 2px rgb(188, 188, 189);
+    cursor: pointer;
+    border: 2px solid var(--joinTalentBtn);
+    border-bottom-right-radius: 12px;
+    transition: all 0.3s ease-in;
+}
+
+button.jointalentbtn:hover{
+    background-color: transparent;
+    color: var(--joinTalentBtn);
+    box-shadow: 0 2px 6px 4px rgb(188, 188, 189);
+    border-top-left-radius: 12px;
+}
+
+.smileimg{
+    /* border: 2px solid green; */
+    width: 40%;
+    height: 65%;
+    position: relative;
+
+}
+
+.partner p{
+    font-weight: 300;
+    opacity: 0.6;
+    margin-bottom: 3px;
+}
+
+.line1img{
+    position: absolute;
+    width: 15%;
+    height: 12%;
+    right: 0;
+    bottom: 100px;
+    z-index: -6;
+}
+
+
+@media screen and (max-width: 1175px) {
+
+
+    section.home{
+        flex-direction: column;
+        padding: 2px;
+        box-sizing: border-box;
+        justify-content: center; 
+        text-align: center;
+    }
+
+    .introhome{
+        margin: 0;
+        padding: 12px;
+        font-size: 0.8rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introhome .abtzuri{
+        padding: 0;
+    }
+
+    nav{
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .linebtn{
+        display: none;
+    }
+
+    .navlogo{
+        width: 40%;
+    }
+
+    .smileimg{
+        border: 2px solid green;
+        width: 40%; 
+         height: 30%;
+    }
+
+    .talentline{
+        display: none;
+    }
+    
+    .line1img{
+        display: none;
+    }
+}
+
+/* ENDDD OF HOME SECTION */
+
+/* IMPACT SECTION STARTS BELOW */
+
+ section.impact{
+    padding: 10px 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--sectionImapactBgColor);
+}
+
+.introimpact{
+    text-align: left;
+    /* border: 2px solid gold; */
+    padding-right: 200px;
+}
+
+.introimpact h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+
+.intrimpact .impctzurih{
+    padding-right: 180px;
+    font-weight: 700;
+}
+
+.introimpact .impctzurip{
+    margin-bottom: 20px;
+    padding-right: 180px;
+    color: rgb(137, 138, 151);
+}
+
+.germ, .eng, .ind, .ngr, .usa{
+    width: 70px;
+    height: 70px;
+    background-color: var(--WhiteColor);
+    padding: 10px;
+    border-radius: 12px;
+    margin-right: 12px;
+}
+
+
+
+.planetimg{
+    /* border: 2px solid green; */
+    width: 400px;
+    height: 400px;
+}
+
+@media screen and (max-width: 1175px) {
+
+
+    section.impact{
+        /* flex-direction: column; */
+        padding: 26px 20px;
+        box-sizing: border-box;
+        justify-content: space-evenly; 
+        text-align: center;
+        min-height: auto;
+    }
+
+    .introimpact{
+        margin: 0;
+        padding: 12px;
+        font-size: 0.8rem;
+        align-items: center;
+    }
+
+    .introimpact h1{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+
+    .introhome .impctzurih{
+        padding: 0;
+    }
+    
+    .introhome .impctzurip{
+        padding: 0;
+    }
+
+    .germ, .eng, .ind, .ngr, .usa{
+        width: 50px;
+        height: 50px;
+        background-color: var(--WhiteColor);
+        padding: 10px;
+        border-radius: 12px;
+        margin-right: 12px;
+    }
+
+    .planetimg{
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+
+/* THE END OF IMPACT SECTION */
+
+/* SKILLS SECTION STARTS BELPE */
+
+section.skill{
+    min-height: auto;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px 10px 80px;
+    margin: 80px 0;
+    position: relative;
+}
+
+.lineskill{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -4;
+}
+
+.skill h1{
+    font-size: 2.5rem;
+    margin: 30px 30px 30px 0; 
+}
+
+.skillbtn{
+    background-color: var(--WhiteColor);
+    margin: 20px 20px 20px 0;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 3px 10px 30px 12px hsl(213, 17%, 90%);
+    transition: all 0.5s ease-in-out;
+}
+
+.skillbtn:hover{
+    transform: translateY(-30px);
+}
+
+@media screen and (max-width: 1175px) {
+    .lineskill{
+        display: none;
+    }
+    
+    /* .skillbtn{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    } */
+}
+
+/* END OF SKILL SECTION */
+
+section.hireus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10px 80px 80px;
+    /* margin: 80px 0; */
+    min-height: auto;
+    width: 100%;
+    background-color: rgb(243, 233, 179);
+    position: relative;
+    /* border: 2px solid green; */
+}
+
+section.hireus h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.ropehire{
+    position: absolute;
+    left: 0;
+    top: 40%;
+
+}
+
+.hirebox{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.hirecard{
+    background-color: var(--WhiteColor);
+    z-index: 2;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 0 2px 13px 8px rgb(188, 188, 189);
+    border-bottom-right-radius: 12px;
+}
+
+.hirecard .people{
+    margin-bottom: 6px;
+}
+/* .hirecard button.hiretalentbtn{
+    padding : 60px 0;
+} */
+
+@media screen and (max-width: 1175px) {
+    .ropehire{
+        display: none;
+    }
+}
+
+
+
+/* END OF HIRE US SECTION */
+
+
+footer{    
+    padding: 80px;
+    width: 100%;
+    background-color: rgb(37, 39, 44);
+}
+
+.socialmed{
+    display: flex;
+    justify-content: space-between;
+}
+
+.zuricoop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.zuricoop p{
+    color: var(--WhiteColor);
+}
+
+
+.fbb, .lin, .twit, .ig{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 2px 8px 12px 0;
+}
+
+.logozuri{
+    margin-bottom: 12px;
+}
+
+.zurimail{
+    text-decoration: none;
+    color: var(--WhiteColor);
+}
+
+
+@media screen and (max-width: 1175px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lstfoot
+
+    .zuricoop{
+        flex-direction: column;
+
+    }
+
+    .socialmed{
+        flex-direction: column;
+    }
+
+    .logozuri{
+        width: 200px;
+
+    }
+
+    .zurimail{
+        margin: 4px;
+    }
+    
+}
+/* THE END/

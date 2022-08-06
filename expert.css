@@ -1,0 +1,204 @@
+:root{
+    --navBgColor: hsla(120, 14%, 75%, 0.822);
+    --sectionHomeBgColor: hsla(180, 23%, 94%, 0.822);
+    --sectionAboutBgColor: rgb(253, 246, 253);
+    --enrollBtn: rgb(233, 24, 24);
+    --textFont: 'Poppins', sans-serif;
+    --WhiteColor: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--textFont);
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--sectionHomeBgColor);
+}
+
+/* First SECTION-HOME */
+
+nav{
+    background-color: var(--navBgColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 60px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li .homenavbtn{
+    color: var(--enrollBtn);
+    transition: all 0.3s ease-in-out;
+    padding: 6px;
+}
+
+nav ul li .homenavbtn:hover{
+    border-bottom: 2px solid var(--enrollBtn);
+    border-radius: 12px;
+}
+
+nav ul li .enrollnavbtn{
+    color: var(--WhiteColor);
+    border: 1px solid var(--enrollBtn);
+    padding: 8px 24px;
+    background-color: var(--enrollBtn);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li .enrollnavbtn:hover{
+    color: var(--enrollBtn);
+    border: 1px solid var(--enrollBtn);
+    padding: 8px 24px;
+    background-color: transparent;
+}
+
+/* NAV ENDS HERE */
+
+section.home{
+    padding: 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.introhome{
+    text-align: left;
+    /* border: 2px solid gold; */
+    padding-right: 200px;
+}
+
+.introhome h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.introhome .abthng{
+    margin: 24px 0;
+}
+
+.homelogo{
+    width: 150px;
+    height: 40px;
+}
+
+button.enrollbtn{
+    background-color: var(--enrollBtn);
+    color: var(--WhiteColor);
+    padding: 6px 12px;
+    margin: 24px 0;
+    font-size: 1.1rem;
+    border: 2px solid var(--enrollBtn);
+}
+
+button.enrollbtn:hover{
+    background-color: transparent;
+    color: var(--enrollBtn);
+    border: 2px solid var(--enrollBtn);
+}
+
+/*.smileimg{
+     border: 2px solid green; 
+    width: 50%; 
+     height: 20%; 
+}*/
+
+.partner p{
+    font-weight: 300;
+    opacity: 0.6;
+    margin-bottom: 3px;
+}
+
+
+@media screen and (max-width: 1175px) {
+
+
+    section.home{
+        flex-direction: column;
+        padding: 2px;
+        box-sizing: border-box;
+        /* width: 100%; */
+        /* align-items: center;
+        align-content: center;*/
+        justify-content: center; 
+        text-align: center;
+    }
+
+    .introhome{
+        margin: 0;
+        padding: 12px;
+        font-size: 0.8rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .smileimg{
+        width: 60%; 
+         height: 30%;
+    }
+    
+}
+
+
+/* END OF HOME SECTION */
+
+section.about{
+    background-color: var(--sectionAboutBgColor);
+    padding: 80px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.about h3{
+    text-transform: capitalize;
+    color: var(--enrollBtn);
+    margin: 8px 0;
+    font-weight: 300;
+}
+
+.about p{
+    margin: 10px 0;
+}
+
+.abouttxtimg{
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.aboutimg{
+    width: 45%;
+    height: 30%;
+}
+
+.abouttext{
+    text-align: left;
+    /* border: 2px solid gold; */
+    padding-right: 200px;
+}

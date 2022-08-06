@@ -1,0 +1,1143 @@
+:root{
+    --bgHomecolor: rgb(255, 249, 246);
+    --bgSectionColor: rgb(240, 50, 50);
+    --textColor: rgb(26, 39, 28);
+    --White: #fff;
+    --refurbished: rgb(39,67,88);
+    --textFont: 'PT Sans Narrow', sans-serif;
+}
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: var(--textFont);
+    max-width: 100%;
+    min-height: 100vh;
+    /* text-align: left; */
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+}
+
+header{
+    width: 100%;
+    min-height: 3vh;
+    position: fixed;
+    background-color: var(--White);
+    top: 0;
+    z-index: 6;
+    padding: 0 30px;
+}
+
+.home{
+    padding: 0 30px;
+}
+
+.ingress{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 32px ;
+    box-shadow: 8px 0 30px var(--textFont);
+}
+
+nav ul{
+    margin-left: 24px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    padding: 8px;
+    margin: 12px;
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li .nava{
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+
+
+nav ul li .nava:hover{
+    text-decoration: underline;
+    color: var(--bgSectionColor);
+    font-size: 1.5rem;
+}
+
+.inlogo{
+    display: flex;
+    width: 280px;
+    /* height: 150px; */
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    transition: transform 0.5s ease;
+    padding: 6px;
+    /* border: 2px solid blue; */
+}
+
+/* .inlogo:hover{
+    transform: rotateX(-50deg);
+} */
+
+.enroll:hover{
+    background-color: var(--White);
+    border: 2px solid var(--bgSectionColor);
+    color: var(--bgSectionColor);
+}
+
+.enroll{
+    cursor: pointer;
+    background-color: var(--bgSectionColor);
+    color: var(--White);
+    border: 3px solid var(--bgSectionColor);
+    border-radius: 30px;
+    padding: 8px 20px 8px 35px;
+    margin-right: 32px;
+    margin-left: 0;
+    margin: 8px 32px 0;
+    /* position: absolute;
+    right: 80px; */
+    transition: all 0.5s ease;
+}
+
+.inlogo:hover .hand{
+    transform: translateX(10px);
+}
+
+.hand{
+    position: absolute;
+    z-index: 9;
+    left: 11%;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    background-color: var(--bgSectionColor);
+    border: 8px solid var(--bgSectionColor);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    /* margin: 3px;
+    position: absolute;
+    right: 180px;*/
+}
+
+
+
+
+@media screen and (max-width: 1173px) {
+
+    body{
+        text-align: center;
+    }
+   
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ingress{
+        margin-right: 12%;
+        /* width: 180px; */
+    }
+    nav ul{
+        position: absolute;
+        top: -20000px; 
+    }
+}
+
+/* end of header */
+
+section.home{
+    padding: 0 30px;
+
+}
+
+
+.section2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* max-width: 100%;
+    min-height: 100vh; */
+    padding: 180px 30px 0 30px;
+}
+
+/* section.home{
+    width: 100%;
+} */
+
+
+.ladyleft{
+
+    margin: 5% 0;
+    /* padding-top: 60px; */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.ladyleft:hover{
+    transform: translateY(30px);
+}
+
+.maleright{
+
+    margin: 5% 0;
+    /* padding: 60px; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.maleright:hover{
+   transform: translateY(-60px);
+}
+
+.details{
+    margin: 20px 20px 0 20px;
+    text-align: center;
+}
+
+.redd{
+    color: var(--bgSectionColor);
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.maintext{
+    font-size: 3rem;
+    font-weight: 700;
+    /* padding: 16x 0; */
+}
+
+.line1{
+    margin-left: 80px;
+}
+.intro{
+    margin: 30px;
+    font-size: 1.2rem;
+}
+
+.btnhome{
+    position: relative;
+}
+
+.linespiral{
+    position: absolute;
+    top: 92%;
+    left: 52%;
+    width: 120px;
+    height: 120px;
+}
+
+.maleface{
+    position: absolute;
+    left: 22%;
+    bottom: 6%;
+    width: 60px;
+    height: 60px;
+}
+
+.enroll2{
+    cursor: pointer;
+    background-color: var(--bgSectionColor);
+    color: var(--White);
+    border: 3px solid var(--bgSectionColor);
+    border-radius: 30px;
+    padding: 12px 25px;
+}
+
+.enroll2:hover{
+    background-color: var(--White);
+    border: 2px solid var(--bgSectionColor);
+    color: var(--bgSectionColor);
+}
+
+
+
+@media screen and (max-width: 1175px) {
+
+    section.home{
+        padding: 0;
+        height: auto;
+        margin-bottom: 22px;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .ladyleft{
+        width: 50%;
+        height: 70%;
+        margin: 0;
+        align-self: center;
+    }
+
+    .maleright{
+        position: absolute;
+        top: -2000px;
+    }
+}
+
+/* end of section home styles */
+
+section.infocard{
+    /* display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: auto; */
+    width: 100%;
+    padding: 0 30px; 
+    margin: 20% 0;
+}
+
+.card1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 2px solid var(--textColor);
+    border-bottom: 2px solid var(--textColor);
+    width: 100%;
+}
+
+.launch{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.helpcard{
+    text-align: right;
+    color: var(--refurbished);
+    padding-left: 12px;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.helpcard a{
+    color: rgb(30, 221, 221);
+}
+
+.helpcard a:hover{
+    color: var(--bgSectionColor);
+}
+
+.linespiral2{
+    margin: 40px 0 3px 120px;
+    height: 60px;
+    /* padding: 25px; */
+}
+.whycard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.whytext{
+    padding-right: 160px;
+}
+
+.whytext p{
+    font-size: 1.5rem;
+    color: var(--bgSectionColor);
+    margin-bottom: 12px;
+}
+
+.whytext h1{
+    margin-right: 160px;
+    font-size: 2rem;
+    font-size: 3rem;
+}
+
+.starblack{
+    width: 200px;
+    height: 200%;
+    margin-right: 180px;
+}
+
+.stepcard{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.cardstep0{
+    flex: 300px;
+    background-color: var(--bgSectionColor);
+    border-radius: 12px;
+    position: relative;
+    min-height: 25rem;
+    padding: 20px;
+    overflow: hidden;
+    margin: 20px;
+    color: var(--White);
+    transition: transform 0.5s ease-in-out;
+}
+
+.curve1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 40%;
+}
+.cardstep1{
+    flex: 300px;
+    background-color: rgb(224, 161, 161);
+    border-radius: 12px;
+    position: relative;
+    min-height: 25rem;
+    padding: 20px;
+    overflow: hidden;
+    margin: 20px;
+    color: var(--textColor);
+    transition: transform 0.5s ease-in-out;
+}
+
+.cardstep0:hover, .cardstep1:hover{
+    transform: translateY(-20px);
+}
+
+.curve2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 40%;
+    transform: translateX(30px);
+}
+.stepcard .text{
+    /* color: var(--White); */
+    margin: 80px 80px 30px 20px;
+    /* padding: 50px 30pxpx 30px 50px; */
+}
+ 
+.stepcard .text h1{
+    font-size: 3rem;
+    margin: 40px 0;
+    line-height: 0.9;
+}
+
+.stepcard .text p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+
+@media screen and (max-width: 1175px) {
+
+    section.infocard{
+        padding: 0;
+        margin-top: 0;
+    }
+    .card1, .card0{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+        width: 100%;
+        /* display: block; */
+    }
+    .launch{
+        text-align: center;
+    }
+    
+    .helpcard{
+        text-align: center;
+    }
+    
+    .whycard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .whytext{
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .stepcard{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .starblack{
+        position: absolute;
+        left: -200000px;
+    }
+    
+}
+
+/* end of section cards */
+
+/* section training starts below */
+
+section.training{
+    background-color: var(--bgSectionColor);
+    margin: 80px 0;
+    color: var(--White);
+    overflow: hidden;
+}
+
+
+.wirespiral{
+    width: 80px;
+    height: 80px;
+    margin-left: 400px;
+}
+
+.txtbtnimg{
+    padding: 0 30px;
+    display: flex;
+    /* border: 2px solid green; */
+    align-content: center;
+    margin-bottom: 30px;
+    /* justify-content: space-between;
+    width: 100%;
+    height: 100vh; */
+}
+
+.txtbtns{
+    /* border: 2px solid yellow; */
+    justify-content: center;
+    align-content: center;
+    margin-left: 50px;
+}
+
+/* .txt{
+    border: 2px solid purple;
+} */
+
+.txt p{
+    font-size: 1.4rem;
+    margin-top: 40px;
+    margin-right: 280px;
+}
+
+.txt h1{
+    font-size: 3rem;
+    margin-right: 200px;
+}
+
+button.fillTrainBtn{
+    background-color: var(--White);
+    color: var(--bgSectionColor);
+    border: 2px solid rgb(250, 247, 247) ;
+    border-radius: 30px;
+    padding: 12px 25px;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgb(27, 27, 18);
+    margin: 24px 0;
+}
+    
+button.fillTrainBtn:hover{
+    border: 2px solid var(--bgSectionColor);
+    color: var(--bgSectionColor);
+    background-color: var(--bgHomecolor);
+}
+
+/* .btns{
+    border: 2px solid gold;
+    display: block;
+    width: 30%;
+} */
+
+.outimg{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid blue; */
+}
+
+.outline{
+    width: 200px;
+    background-color: transparent;
+    color: var(--White);
+    border: 2px solid var(--White) ;
+    border-radius: 50px;
+    padding: 12px;
+    cursor: pointer;
+    margin: 24px 24px 24px 0;
+    font-size: 1.1rem;
+    display: inline-flex;
+    flex: 1;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ladycomp{
+    width: 50%;
+    height: 50%;
+}
+
+img.grid{
+    margin: 0 24px 24px 32px;
+    width: 130px;
+    height: 130px;
+}
+
+@media screen and (max-width: 1175px) {
+    .txtbtnimg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt p, .txt h1{
+        padding: 0;
+    }
+}
+
+/* End of section training */
+
+/* Start of section scope */
+
+section.scope{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scopetext p{
+    color: var(--bgSectionColor);
+    font-size: 2rem;
+}
+
+.scopetext h1{
+    font-size: 3rem;
+    padding-right: 800px;
+}
+
+.spiral4{
+    width: 150px;
+    height: 150px;
+    /* margin: 8px 0 8px 50%; */
+}
+
+
+.scopecard{
+    color: var(--textColor);
+    /* margin: 12px;
+    padding: 24px; */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.scopecard1{
+    background-color: var(--bgHomecolor);
+    width: 400px;
+    min-height: 350px;
+    margin: 20px;
+    padding: 20px;
+    flex: 300px;
+    border-radius: 24px;
+    box-shadow: 3px 12px 16px rgb(228, 188, 143);
+    transition: transform 0.5s ease-in-out;
+    /* flex-basis: 300px; */
+    /* background-color: var(--bgHomecolor);
+    border-radius: 12px;
+    flex: 450px;
+    padding: 20px;
+    overflow: hidden;
+    margin: 20px;
+    color: var(--textColor);
+    transition: transform 0.5s ease-in-out; */
+}
+
+.scopecard1:hover{
+    transform: translateY(20px);
+}
+
+.scopecardtext1{
+    margin: 24px 0;
+
+}
+
+.scopeicons{
+    width: 40px;
+    height: 40px;
+    margin: 20px 6px 20px 6px;
+}
+
+.scopecardtext2{
+    margin: 16px 24px 20px 0;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    padding-right: 10px;
+    color: rgb(51, 51, 49);
+    opacity: 0.6;
+}
+
+.scopeenroll2{
+    cursor: pointer;
+    background-color: var(--bgSectionColor);
+    color: var(--White);
+    border: 3px solid var(--bgSectionColor);
+    border-radius: 30px;
+    padding: 12px 25px;
+    margin: 24px;
+}
+
+.scopeenroll2:hover{
+    background-color: var(--White);
+    border: 2px solid var(--bgSectionColor);
+    color: var(--bgSectionColor);
+}
+
+
+@media screen and (max-width: 1175px) {
+    .scopecard1{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .scopetext h1{
+        padding: 0;
+    }
+}
+
+/* Section scope ends here */
+/* Section FAQS bedins below */
+
+
+
+.faqs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 0 30px;
+    border-top: 1px solid var(--textColor);
+    border-bottom: 1px solid var(--textColor);
+}
+
+
+
+.wiretxtfaqs{
+    display: flex;
+    align-items: flex-start;
+    margin: 80px;
+    padding: 0;
+    width: 100%;
+}
+
+
+.txtfaqs{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.wirefaqs{
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    left: 250px;
+}
+
+.txtfaqs p{
+    color: var(--bgSectionColor);
+    font-size: 1.5rem;
+}
+
+.txtfaqs h1{
+    font-size: 3rem;
+}
+/* CHEEEEEEEEEEEEEEEEEEEEEEEEEEECKKKKKKKK */
+
+
+.askme{
+    border: 1.2px solid var(--textColor);
+    border-collapse: collapse;
+    margin: 0;
+    width: 80%;
+    padding: 25px 300px 25px 12px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    position: relative;
+    color: var(--textColor);
+    transition: all 0.6s ease-in-out;
+}
+
+.subfaqs{
+    width: 100%;
+}
+
+.sublist{
+    display: none;
+    font-weight: 300;
+    opacity: 0.2;
+    transition: all 0.6s ease;
+}
+
+.faqa{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 200;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    transition: all 0.6s ease-in-out;
+}
+
+.faqa:hover{
+    transform: rotateY(60deg);
+}
+
+
+.askme:hover .sublist{
+    display: block;
+    opacity: 0.8;
+}
+
+/*.faqsbox{
+    width: 100%;
+    padding: 0 100px;
+    margin: 30px 0;
+}
+
+.quest{
+    width: 100%;
+}
+
+.askme{
+    border: 1.2px solid var(--textColor);
+    border-collapse: collapse;
+    padding: 25px 300px 25px 12px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    position: relative;
+    color: rgb(124, 118, 105);
+}
+
+.askme a{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 300;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    transition: all 0.6s ease-in-out;
+}
+
+.askme a:hover{
+    transform: skewY(40deg);
+}
+
+.socialquest{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialquest p{
+    color: rgb(124, 118, 105);
+    font-size: 1.3rem;
+}
+
+.socialquestbtn{
+    background-color: var(--bgSectionColor);
+    color: var(--White);
+    border: 3px solid var(--bgSectionColor);
+    border-radius: 30px;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+    
+.socialquestbtn:hover{
+    border: 2px solid var(--bgSectionColor);
+    color: var(--bgSectionColor);
+    background-color: var(--White);
+}
+
+.imgsocialbtn{
+    opacity: 0.4;
+}
+
+.socialquestbtn:hover .imgsocialbtn{
+    opacity: 0.8;
+}  */
+
+
+
+
+/* PROGRAM SECTION STARTS BELOW */
+
+section.program{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    position: relative;
+    /* border: 2px solid tomato; */
+}
+
+.wirree{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+}
+
+.redstar7{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+}
+
+.circlepro{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+}
+
+.move{
+    position: absolute;
+    left: 20px;
+    bottom: 200px;
+}
+
+.text7{
+    /* border: 2px solid orange; */
+    width: 100%;
+    margin: 30px;
+    text-align: center;
+    padding: 30px;
+}
+.text7 .struct{
+    color: var(--bgSectionColor);
+    font-size: 1.3rem;
+}
+
+.text7 h1{
+    font-size: 2.3rem;
+}
+
+.text7 .broad{
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.twinbox{
+    display: flex;
+    flex: 1;
+}
+
+.blackbox{
+    background-color: rgba(16, 17, 17, 0.836);
+    color: var(--White);
+    border-radius: 35px;
+    margin: 20px;
+    padding: 30px 0 30px 30px;
+    max-width: 400px;
+    min-height: fit-content;
+    box-shadow: 10px 6px 30px 20px rgb(250, 228, 228);
+    z-index: 3;
+}
+
+.blackbox h1{
+    font-size: 3rem;
+    margin-bottom: 6px;
+    margin-left: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+
+.blackbox p{
+    padding: 2px 120px 6px 0;
+    margin-left: 20px;
+}
+
+.blackbox li{
+    padding: 2px 80px 2px 8px;
+    margin-left: 40px;
+}
+
+.blackbox h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 4px 0 8px 20px;
+    text-transform: capitalize;
+}
+
+.blackbox .rmv{
+    list-style: none;
+    margin: 8px;
+}
+
+
+
+
+@media screen and (max-widt: 1175px) {
+    .twinbox{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+/* END OF SECTION PROGRAM */
+
+section.lastcard{
+    position: relative;
+    padding: 0 30px;
+}
+
+.circle7{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.redcard7{
+    background-color: var(--bgSectionColor);
+    border-radius: 30px;
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    color: var(--White);
+}
+
+
+
+.mains7{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 6px;
+    right: 12px;
+}
+
+.round{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.bend7{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.curve7{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+
+}
+
+
+.cardtxt{
+    padding: 20px;
+}
+
+.cardtxt p{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.cardtxt h1{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.redenroll{
+    background-color: var(--White);
+    color: var(--bgSectionColor);
+    border: 2px solid rgb(250, 247, 247) ;
+    border-radius: 30px;
+    padding: 12px 25px;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgb(27, 27, 18);
+    margin: 24px 0;
+}
+
+/* END OF LAST CARD */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    /* border: 2px solid yellow; */
+    width: 100%;
+    margin: 30px 0;
+}
+
+.lstfoot{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 2px solid rgb(224, 161, 161); */
+}
+
+.fbb, .lin, .twit, .ig{
+    width: 20px;
+    height: 20px;
+    /* background-color: var(--bgSectionColor); */
+    border-radius: 50px;
+    margin: 2px 8px 12px 0;
+}
+
+.logozuri{
+    margin-bottom: 12px;
+}
+/* THE END/
