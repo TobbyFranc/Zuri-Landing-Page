@@ -16,12 +16,12 @@
 
 body{
     font-family: var(--textFont);
-    max-width: 100%;
+    width: 100%;
     min-height: 100vh;
-    /* text-align: left; */
     box-sizing: border-box;
     display: grid;
     place-content: center;
+    /* background-color: aquamarine; */
 }
 
 header{
@@ -31,11 +31,7 @@ header{
     background-color: var(--White);
     top: 0;
     z-index: 6;
-    padding: 0 30px;
-}
-
-.home{
-    padding: 0 30px;
+    padding: 0 3px;
 }
 
 .ingress{
@@ -45,8 +41,7 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    /* align-content: flex-start; */
-    padding: 32px ;
+    padding: 12px 32px ;
     box-shadow: 8px 0 30px var(--textFont);
 }
 
@@ -125,49 +120,52 @@ nav ul li .nava:hover{
 @media screen and (max-width: 1173px) {
 
     body{
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
    
     header{
-        justify-content: center;
+        justify-content: space-between;
     }
     
     .ingress{
-        margin-right: 0;
-        width: 200px;
+        width: 160px;
     }
 
     nav{
-        justify-content: flex-start;
-        padding: 0;
+        justify-content: center;
+       
     }
-
-
     
     nav ul{
         display: none;
     }
 
-    
-    .enroll{
-        cursor: pointer;
-        background-color: var(--bgSectionColor);
-        color: var(--White);
-        border: 3px solid var(--bgSectionColor);
-        border-radius: 30px;
-        padding: 8px 20px 8px 35px;
-        margin: 8px 32px 0;
-        transition: all 0.5s ease;
+    .inlogo{
+        display: flex;
+        width: 200px;
+        padding: 6px 0;
+        margin-right: 6px;
     }
 
+    .enroll{
+        padding: 2px 10px 2px 38px;
+        margin: 4px 0;
+    }
+    
+    .hand{
+        width: 50px;
+        height: 50px;
+    }
+    
 
 }
 
 /* end of header */
 
 section.home{
-    padding: 0 30px;
-
+    padding: 20px 30px 80px 30px;
 }
 
 
@@ -175,20 +173,11 @@ section.home{
     display: flex;
     align-content: center;
     justify-content: center;
-    /* max-width: 100%;
-    min-height: 100vh; */
-    padding: 180px 30px 0 30px;
+    margin: 120px 30px 0 30px;
 }
 
-/* section.home{
-    width: 100%;
-} */
-
-
 .ladyleft{
-
-    margin: 5% 0;
-    /* padding-top: 60px; */
+    margin: 8% 0;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -198,9 +187,7 @@ section.home{
 }
 
 .maleright{
-
-    margin: 5% 0;
-    /* padding: 60px; */
+    margin: 8% 0;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -210,20 +197,20 @@ section.home{
 }
 
 .details{
-    margin: 20px 20px 0 20px;
+    margin: 20px;
     text-align: center;
 }
 
 .redd{
     color: var(--bgSectionColor);
-    margin-bottom: 12px;
+    margin: 50px 0 12px 0;
     font-size: 1.5rem;
 }
 
 .maintext{
     font-size: 3rem;
     font-weight: 700;
-    /* padding: 16x 0; */
+    padding: 0 20px;
 }
 
 .line1{
@@ -232,26 +219,23 @@ section.home{
 .intro{
     margin: 30px;
     font-size: 1.2rem;
-}
-
-.btnhome{
-    position: relative;
+    padding: 0 20px;
 }
 
 .linespiral{
     position: absolute;
     top: 92%;
     left: 52%;
-    width: 120px;
-    height: 120px;
+    width: 8rem;
+    height: 8rem;
 }
 
 .maleface{
     position: absolute;
-    left: 22%;
-    bottom: 6%;
-    width: 60px;
-    height: 60px;
+    left: 32%;
+    bottom: 2%;
+    width: 4rem;
+    height: 4rem;
 }
 
 .enroll2{
@@ -279,47 +263,71 @@ section.home{
         margin-bottom: 22px;
     }
     .section2{
-        display: flex;
         flex-direction: column;
-        align-content: center;
         align-items: center;
+        justify-content: space-around;
         text-align: center;
         min-height: auto;
+        margin: 100px 0 0 0;
     }
+    
+
+    /*  */
 
     .ladyleft{
-        width: 50%;
-        height: 70%;
-        margin: 0;
+        width: 70%;
+        height: 80%;
+        margin: 40px 0 0 0;
         align-self: center;
     }
 
     .maleright{
-        position: absolute;
-        top: -2000px;
+        display: none;
     }
+
+    .details{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .redd{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .maintext{
+        font-size: 2rem;
+    }
+
+    .linespiral{
+        display: none;
+    }
+    
+    .maleface{
+        display: none;
+    }
+    
 }
 
 /* end of section home styles */
 
-section.infocard{
-    /* display: flex;
-    justify-content: space-between;
-    align-content: center;
-    height: auto; */
-    width: 100%;
-    padding: 0 30px; 
-    margin: 20% 0;
-}
+
 
 .card1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding-top: 30px;
+    padding-bottom: 12px;
+    margin: 40px 30px 6px 30px;
     border-top: 2px solid var(--textColor);
     border-bottom: 2px solid var(--textColor);
-    width: 100%;
+    
+}
+
+.card1 img{
+    width: 15rem;
+    margin: 0 66px;
 }
 
 .launch{
@@ -327,14 +335,15 @@ section.infocard{
     font-weight: 700;
     text-align: left;
     font-size: 1.8rem;
+    line-height: 2.5rem;
 }
 
 .helpcard{
     text-align: right;
     color: var(--refurbished);
-    padding-left: 12px;
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 1.8rem;
+    line-height: 2.5rem;
 }
 
 .helpcard a{
@@ -345,13 +354,34 @@ section.infocard{
     color: var(--bgSectionColor);
 }
 
+@media screen and (max-width: 1175px) {
+    .card1{
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+    }
+    .launch{
+        text-align: center;
+    }
+    
+    .helpcard{
+        text-align: center;
+    }
+}
+
+/* END OF Card section */
+
+
+
 .linespiral2{
-    margin: 40px 0 3px 120px;
-    height: 60px;
+    margin: 20px 0 3px 280px;
+    height: 5rem;
     /* padding: 25px; */
 }
 .whycard{
     display: flex;
+    padding: 0 30px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
@@ -359,7 +389,10 @@ section.infocard{
 }
 
 .whytext{
-    padding-right: 160px;
+    /* border: 2px solid green; */
+    margin-right: 170px;
+    padding-right: 30px;
+    text-align: justify;
 }
 
 .whytext p{
@@ -370,32 +403,97 @@ section.infocard{
 
 .whytext h1{
     margin-right: 160px;
-    font-size: 2rem;
     font-size: 3rem;
 }
 
 .starblack{
-    width: 200px;
-    height: 200%;
-    margin-right: 180px;
+    width: 150px;
+    height: 80%;
+    /* border: 2px solid green; */
+    margin-right: 200px;
+}
+
+@media screen and (max-width: 1175px) {
+    .whycard{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+    .whytext{
+        margin-right: 0;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .linespiral2{
+        margin: 0;
+        height: 5rem;
+    }
+    
+    .whytext p{
+        font-size: 1.5rem;
+        margin-bottom: 6px;
+    }
+    
+    .whytext h1{
+        margin-right: 0;
+        font-size: 2.4rem;
+    }
+
+    .starblack{
+        width: 80px;
+        height: 40%;
+        margin-right: 0;
+    }
+
+
+}
+
+/* @media screen and (max-width:900px) {
+    .starblack{
+        display: none;
+    }
+    
+} */
+
+/* END OF INFOCARD DIV SECTION */
+
+/* section.infocard{
+    width: 100%;
+    padding: 0 30px; 
+    /* margin: 20% 0;
 }
 
 .stepcard{
     display: inline-flex;
     flex-wrap: wrap;
     margin-top: 40px;
+} */
+
+/* .stepcard{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+} */
+
+.stepcard{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cardstep0{
-    flex: 300px;
+    width: 400px;
+    min-height: 300px;
+    margin: 20px;
+    padding: 25px;
     background-color: var(--bgSectionColor);
     border-radius: 12px;
-    position: relative;
-    min-height: 25rem;
-    padding: 20px;
-    overflow: hidden;
-    margin: 20px;
     color: var(--White);
+    overflow: hidden;
+    position: relative;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -403,24 +501,23 @@ section.infocard{
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
-    height: 40%;
-}
-.cardstep1{
-    flex: 300px;
-    background-color: rgb(224, 161, 161);
-    border-radius: 12px;
-    position: relative;
-    min-height: 25rem;
-    padding: 20px;
-    overflow: hidden;
-    margin: 20px;
-    color: var(--textColor);
-    transition: transform 0.5s ease-in-out;
 }
 
 .cardstep0:hover, .cardstep1:hover{
     transform: translateY(-20px);
+}
+
+.cardstep1{
+    width: 400px;
+    min-height: 300px;
+    margin: 20px;
+    padding: 25px;
+    background-color: rgb(224, 161, 161);
+    border-radius: 12px;
+    color: var(--textColor);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
 }
 
 .curve2{
@@ -432,9 +529,8 @@ section.infocard{
     transform: translateX(30px);
 }
 .stepcard .text{
-    /* color: var(--White); */
+
     margin: 80px 80px 30px 20px;
-    /* padding: 50px 30pxpx 30px 50px; */
 }
  
 .stepcard .text h1{
@@ -445,24 +541,26 @@ section.infocard{
 
 .stepcard .text p{
     font-size: 1.2rem;
-    font-weight: 700;
     margin: 30px 0;
 }
 
 
 @media screen and (max-width: 1175px) {
 
-    section.infocard{
+    section.stepcard{
         padding: 0;
         margin-top: 0;
+        display: block;
     }
-    .card1, .card0{
+
+
+    /* .card1, .card0{
         display: flex;
         flex-direction: column;
         justify-items: center;
         text-align: center;
         width: 100%;
-        /* display: block; */
+        /* display: block; 
     }
     .launch{
         text-align: center;
@@ -470,31 +568,7 @@ section.infocard{
     
     .helpcard{
         text-align: center;
-    }
-    
-    .whycard{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .whytext{
-        padding-right: 0;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .stepcard{
-        display: block;
-    }
-}
-
-
-@media screen and (max-width:900px) {
-    .starblack{
-        position: absolute;
-        left: -200000px;
-    }
+    } */
     
 }
 
